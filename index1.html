@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Jha Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <a href="#hero">Ayush Jha</a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="hover-effect">Home</a></li>
+                <li><a href="#education" class="hover-effect">Education</a></li>
+                <li><a href="#projects" class="hover-effect">Projects</a></li>
+                <li><a href="#skills" class="hover-effect">Skills</a></li>
+                <li><a href="#achievements" class="hover-effect">Achievements</a></li>
+                <li><a href="#contact" class="hover-effect">Contact</a></li>
+                <li><a href="https://drive.google.com/file/d/1vqLUBH2Gq3NXYiBDh7JkUUgK04HzBLoS/view?usp=drivesdk"
+                        class="hover-effect" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div id="particles-js"></div>
+        <section class="header-container">
+            <img class="profile-image" src="images\ayush face.jpg" alt="Ayush Jha" />
+        </section>
+        <h1 id="animatedHeading" class="animated-text-container">Hello, I'm Ayush Jha</h1>
+        <p id="animatedSubtext" class="animated-text-container">AI/ML Enthusiast <b>|</b> Python Developer <b>|</b>
+            Competitive programmer</p>
+
+        <button class="about-btn" id="aboutBtn">About Me</button>
+
+
+        <!-- About Me Sliding Panel -->
+        <div class="about-panel" id="aboutPanel">
+            <button class="close-btn" id="closeAboutBtn"><i class="fas fa-times"></i></button>
+            <h2>About Me</h2>
+            <p>I'm a passionate Information Technology student at Kamla Nehru Institute of Technology, Sultanpur, with a
+                keen interest in AI/ML, Python development, and competitive programming. I enjoy solving complex
+                problems, building innovative projects, and continuously learning new technologies to enhance my skills.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rest of your sections remain unchanged -->
+    <section class="hero3">
+        <div id="particles-js"></div>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="education-cards">
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-year">2022 - 2026</div>
+                        <h3>Kamla Nehru Institute of Technology, Sultanpur</h3>
+                        <div class="edu-degree">B.Tech - Information Technology</div>
+                        <div class="edu-gpa">
+                            <span class="gpa-label">CGPA:</span>
+                            <div class="gpa-bar">
+                                <div class="gpa-fill" style="width: 87%;">8.7</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="edu-card">
+                    <div class="edu-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-year">2018 - 2022</div>
+                        <h3>D.A.V Sr. Sec. Public School, Anpara</h3>
+                        <div class="edu-degree">High School & Intermediate</div>
+                        <div class="edu-scores">
+                            <div class="score-item">
+                                <span class="score-label">High School:</span>
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 97.8%;">97.8%</div>
+                                </div>
+                            </div>
+                            <div class="score-item">
+                                <span class="score-label">Intermediate:</span>
+                                <div class="score-bar">
+                                    <div class="score-fill" style="width: 91.2%;">91.2%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="hero2">
+        <section id="projects" class="projects">
+            <h2>Personal Projects</h2>
+            <div class="grid">
+                <div class="project">
+                    <h3>Ask It-Youtube chatbot assistant</h3>
+                    <img src="images/ytchatbotapp.png" alt="yt chatbot assistant" class="project-image">
+                    <p>Built a content-based recommendation system using machine learning with advanced text
+                        vectorization.</p>
+                    <a href="https://github.com/mysteriouscoder610/Ask-It-Youtube-Chatbot-Assistant" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Intelligent Policy Query Engine</h3>
+                    <img src="images/policyengine.png" alt="Intelligent Policy Query Engine" class="project-image">
+                    <p>Built a content-based recommendation system using machine learning with advanced text vectorization.</p>
+                    <a href="https://intelligent-policy-query-engine.onrender.com/docs#/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Eco score predictor</h3>
+                    <img src="images/ecoscorepredictor.png" alt="Eco Score Predictor" class="project-image">
+                    <p>Built a content-based recommendation system using machine learning with advanced text
+                        vectorization.</p>
+                    <a href="https://eco-score-predictor.streamlit.app/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Whatsapp Chat Analyzer</h3>
+                    <img src="images/whatsapp.png" alt="Whatsapp chat analyser" class="project-image">
+                    <p>Developed a Data-Driven WhatsApp Chat Analyzer using Streamlit, Pandas, and NLP techniques.</p>
+                    <a href="https://whatsappchatanalyseraj.streamlit.app/" target="_blank">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>Movie Recommendation System</h3>
+                    <img src="images/image.png" alt="Movie Recommendation System Screenshot" class="project-image">
+                    <p>Built a content-based recommendation system using machine learning with advanced text
+                        vectorization.</p>
+                    <a href="https://movie-recommendation-system-aj.streamlit.app/" target="_blank">View Project</a>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="hero4">
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+
+            <!-- Programming Languages Section -->
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="images/cpp.png" alt="C++">
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/c.png" alt="C">
+                        <p>C</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/py_logo.png" alt="Python">
+                        <p>Python</p>
+                    </div>
+                    <!-- <div class="skill-item">
+                        <img src="images/html1.jpeg" alt="HTML">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/css1.svg" alt="CSS">
+                        <p>CSS</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Libraries Section -->
+            <div class="skills-category">
+                <h3>Libraries</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="images/tensorflow.png" alt="Scikit Learn">
+                        <p>Tensorflow</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/scikit.png" alt="Scikit Learn">
+                        <p>Scikit Learn</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/numpy.png" alt="Numpy">
+                        <p>Numpy</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/Pandas.png" alt="Pandas">
+                        <p>Pandas</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/seaborn.png" alt="Seaborn">
+                        <p>Seaborn</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/tkinter.png" alt="tkinter">
+                        <p>Tkinter</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/soup.png" alt="soup">
+                        <p>BS4</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frameworks Section -->
+            <div class="skills-category">
+                <h3>Frameworks</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="images/langchainicon.avif" alt="Flask">
+                        <p>Langchain</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/fastapi.png" alt="Flask">
+                        <p>FastAPI</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/langgraph.png" alt="Flask">
+                        <p>Langgraph</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/flask.png" alt="Flask">
+                        <p>Flask</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/streamlt.png" alt="Streamlit">
+                        <p>Streamlit</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Data Analysis Tools Section -->
+            <div class="skills-category">
+                <h3>Data Analysis Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="images/sql.png" alt="SQL">
+                        <p>SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/postgresql.png" alt="Flask">
+                        <p>Postgre SQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/tableu.png" alt="SQL">
+                        <p>Tableau</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Developer Tools Section -->
+            <div class="skills-category">
+                <h3>Developer Tools</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <img src="images/git.png" alt="Git">
+                        <p>Git</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/docker.png" alt="Flask">
+                        <p>Docker</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/google.png" alt="Google Colab">
+                        <p>Google Colab</p>
+                    </div>
+                    <div class="skill-item">
+                        <img src="images/anaconda.png" alt="anaconda">
+                        <p>Anaconda</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="hero5">
+        <section id="profiles" class="profiles">
+            <h2>Coding profiles</h2>
+            <ul>
+                <li>
+                    <a href="https://www.codechef.com/users/itsayush61o" target="_blank">
+                        <img src="images/codecheficon.png"
+                            alt="CodeChef" style="width: 60px; height: 60px;">
+                    </a>
+                    CodeChef
+                </li>
+                <li>
+                    <a href="https://codeforces.com/profile/dumbledore_wizard_610" target="_blank">
+                        <img src="images/codeforcesicon (1).png"
+                            alt="Codeforces" style="width: 60px; height: 60px;">
+                    </a>
+                    Codeforces
+                </li>
+                <li>
+                    <a href="https://leetcode.com/its_ayush_610/" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"
+                            alt="LeetCode" style="width: 60px; height: 60px;">
+                    </a>
+                    Leetcode
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <section class="hero2">
+        <section id="projects" class="projects">
+            <h2>Certifications</h2>
+            <div class="grid">
+                <div class="project">
+                    <h3>TCS Codevita Season 12</h3>
+                    <img src="images/tcs.png" alt="tcs" class="project-image">
+                    <a href="https://drive.google.com/file/d/1URecr8e1X49wa67nu8jhz-Fx5x8Z3S_G/view" target="_blank">Link</a>
+                </div>
+                <div class="project">
+                    <h3>Naukri Campus Young Turks</h3>
+                    <img src="images/naukri.png" alt="naukri" class="project-image">
+                    <a href="https://www.naukri.com/campus/certificates/young_turks_round_1_achievement/v0/6707e75c5abe131f423e12ad?utm_source=certificate&utm_medium=copy&utm_campaign=6707e75c5abe131f423e12ad/" target="_blank">Link</a>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="hero6">
+        <section id="achievements" class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>
+                    <h3>Qualified GATE:</h3> Qualified GATE' 25 and attained AIR 17k in GATE Computer Science and Information Technology.
+                </li>
+                <li>
+                    <h3>Codeforces:</h3> Attained the title of Pupil with a Highest Rating of 1283 and secured a
+                    global rank of 3679 out of
+                    45,000+ participants in Codeforces Round 886 Division 3.
+                </li>
+                <li> <h3>CodeChef:</h3> Earned a 3-star rating with a Highest Rating of 1624. Achieved 450th place out of 3,500+ participants in CodeChef Starters 143 Division 3(Rated).</li>
+                <li><h3>LeetCode:</h3> Reached a Top Rating of 1714 and secured 3327th place out of 19,000+ participants in
+                    leetcode Weekly
+                    Contest 430.</li>
+                <li>Solved over 1000+ problems on various problems on various platforms such as codechef, leetcode and
+                    codeforces.</li>
+
+            </ul>
+        </section>
+    </section>
+
+    <section class="hero7">
+        <section id="contact" class="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <input type="number" id="number" name="number" placeholder="Your Contact no." required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </section>
+
+    <footer>
+        <p>© 2025 Ayush Jha. All Rights Reserved.</p>
+        <div class="social-icons">
+
+            <a href="https://x.com/itsayush610" target="_blank"><img src="images/twitter-icon.svg" alt="Twitter" /></a>
+            <a href="https://www.linkedin.com/in/ayushjha6104/" target="_blank"><img src="images/linkedin-icon.svg"
+                    alt="Linkedin" /></a>
+            <a href="https://github.com/mysteriouscoder610" target="_blank"><img src="images/github-icon.svg"
+                    alt="GitHub" /></a>
+        </div>
+    </footer>
+
+    <div class="fab" id="scrollToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
